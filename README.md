@@ -1,28 +1,90 @@
-# ANKER – Stabilisationsachse · iki1uc
+# 🌐 NET – Netzwerk‑Achse & Systemlink
 
-## Zweck
-ANKER ist die Stabilisationsachse des iki1uc‑Systems.
-Es hält die Achsen IQ, QI, EVO, UPD, UPG, BIOS und CALC im korrekten Verhältnis.
+NET ist die Netzwerk‑Stabilisierungsachse des gesamten Systems.  
+Es verbindet alle Module über **LAN**, **WLAN**, **WAN**, **NET** und **LINK**  
+und stellt sicher, dass AXO‑Module, ID‑Module und Frontend‑Dateien online funktionieren.
 
-## Struktur
-- NAME: ANKER
-- ID: A01
-- Station: S01
-- Dimension: D4
-- Modus: erabel (neutral, operation möglich)
+NET ist ein **ANKER‑Modul**:  
+Es ist **stabilisierend**, **verteilend**, **verlinkend**, aber **nicht berechnend**.
 
-## Rolle
-ANKER stabilisiert, ohne selbst aktiv zu berechnen oder zu steuern.
-Es ist die neutrale Achse zwischen AXI, 6d und API.
+---
 
-## Bindungen
-- AXI
-- 6d
-- 360
-- 100
-- 213 (REAL)
-- API
+## 🎯 Zweck
 
-## Status
-STATE = STABIL  
-READY = 100%
+- Bereitstellung einer stabilen Netzwerk‑Schicht  
+- Verbindung aller Module über NET/LINK  
+- Online‑Bereitschaft für index.html und id.html  
+- Unterstützung für AXO‑ID‑Module  
+- Bereitstellung einer gemeinsamen NET‑Status‑Anzeige  
+- Grundlage für GitHub Pages / Browser‑Zugriff
+
+NET ist die **Netzwerk‑Achse**, die alle Repositories verbindet.
+
+---
+
+## 📦 Struktur
+
+Das Repository enthält:
+
+- **README.md** – Dokumentation  
+- **index.html** – NET‑Frontend (Online‑Status, ID‑Auswahl)  
+- **id.html** – Anzeige einzelner ID‑Informationen  
+- **IDkoop.js** – KOOP‑ID Modul  
+- **IDneutral.js** – NEUTRAL‑ID Modul  
+- **IDpook.js** – POOK‑ID Modul  
+
+---
+
+## 🌐 index.html
+
+Die Datei `index.html` zeigt:
+
+- NET‑Status (Online/Offline)  
+- ID‑Auswahl (KOOP / NEUTRAL / POOK)  
+- Live‑Anzeige der ID‑Informationen  
+
+Sie ist vollständig kompatibel mit:
+
+- LAN  
+- WLAN  
+- WAN  
+- GitHub Pages  
+- Browsern (Chrome, Firefox, Edge, Safari)
+
+---
+
+## 🧩 id.html
+
+Zeigt die vollständige ID‑Information im Browser.
+
+---
+
+## 🔧 ID‑Module
+
+### IDkoop.js
+
+KOOP‑ID: Kooperation, Verbindung, Stabilität
+
+
+### IDneutral.js
+
+NEUTRAL‑ID: Ausgleich, Mitte, Balance
+
+
+### IDpook.js
+
+POOK‑ID: Pool‑Quelle, Datenanker, Stabilisationsachse
+
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/iki1uc/NET.git
+cd NET
+
+
+📄 Lizenz
+Dieses Projekt ist frei nutzbar.
+
