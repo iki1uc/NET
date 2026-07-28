@@ -1,15 +1,89 @@
-<script src="IDkoop.js"></script>
-<script src="IDneutral.js"></script>
-<script src="IDpook.js"></script>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>NET – ID Viewer</title>
 
-<script>
-function showID(mode) {
-    const map = {
-        koop: ID_KOOP,
-        neutral: ID_NEUTRAL,
-        pook: ID_POOK
-    };
-    const id = map[mode];
-    document.getElementById("id-info").innerText = id.info();
-}
-</script>
+    <style>
+        body {
+            font-family: Arial;
+            background:#0d0d0d;
+            color:#e6e6e6;
+            padding:20px;
+        }
+        h1 { color:#4af; }
+        button {
+            margin:5px;
+            padding:10px 20px;
+            font-size:16px;
+            background:#222;
+            color:#fff;
+            border:1px solid #555;
+            cursor:pointer;
+        }
+        button:hover { background:#333; }
+        #id-info {
+            margin-top:20px;
+            font-size:20px;
+            padding:15px;
+            background:#000;
+            border:1px solid #333;
+            border-radius:8px;
+        }
+        .net-status {
+            margin-top:30px;
+            padding:10px;
+            background:#111;
+            border-left:4px solid #4af;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>NET – ID Viewer</h1>
+
+    <p>Wähle eine ID‑Quelle:</p>
+
+    <button onclick="showID('koop')">KOOP ID</button>
+    <button onclick="showID('neutral')">NEUTRAL ID</button>
+    <button onclick="showID('pook')">POOK ID</button>
+
+    <div id="id-info">Noch keine ID ausgewählt.</div>
+
+    <div class="net-status">
+        <strong>NET‑Status:</strong>
+        <span id="net-status-text">Prüfe Verbindung...</span>
+    </div>
+
+    <!-- ID‑Module laden -->
+    <script src="IDkoop.js"></script>
+    <script src="IDneutral.js"></script>
+    <script src="IDpook.js"></script>
+
+    <script>
+        function showID(mode) {
+            const map = {
+                koop: ID_KOOP,
+                neutral: ID_NEUTRAL,
+                pook: ID_POOK
+            };
+            const id = map[mode];
+            document.getElementById("id-info").innerText = id.info();
+        }
+
+        // NET / LINK / WLAN / LAN / WAN Status
+        function updateNetStatus() {
+            let online = navigator.onLine;
+            let text = online
+                ? "Online – NET/LINK aktiv, WAN/WLAN/LAN bereit."
+                : "Offline – nur lokale Funktionen aktiv.";
+            document.getElementById("net-status-text").innerText = text;
+        }
+
+        window.addEventListener("online", updateNetStatus);
+        window.addEventListener("offline", updateNetStatus);
+        updateNetStatus();
+    </script>
+
+</body>
+</html>
