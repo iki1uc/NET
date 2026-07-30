@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>IKI1UC · VECTOR Runtime</title>
+
+<style>
+body { background:#000; color:#0f0; font-family:Consolas; padding:20px; }
+h1 { color:#6f6; }
+pre { background:#111; padding:12px; border:1px solid #333; border-radius:6px; }
+</style>
+
+<script type="module">
+
+// =========================
+// 1. Vektor definieren
+// =========================
+
+const INIT = [1,0,0];
+const QI   = [1,1,0];
+const IQQ  = [0,1,1];
+
+const ANKER = {
+    vector: {
+        init: INIT,
+        qi: QI,
+        iqq: IQQ,
+        state: [QI[0], IQQ[1], INIT[2]]
+    } https://copilot.microsoft.com/chats/hN6XfkYLjCaoV1r1yijCA
+};
+
+// =========================
+// 2. TEAM VECTOR
+// =========================
+
+const TEAM_VECTOR = {
+    pq: "active",
+    pp: "active",
+    anchor: ANKER.vector.state
+};
+
+// =========================
+// 3. NC.link FullSync
+// =========================
+
+async function sendVector() {
+    try {
+        const mod = await import("./NCLinkFullSync.js");
+        const out = mod.LINK.fullSync({
+            vector: ANKER.vector,
+            team: TEAM_VECTOR,
+            time: Date.now()
+        });
+
+        document.getElementById("out").textContent =
+            JSON.stringify(out, null, 2);
+
+    } catch(e) {
+        document.getElementById("out").textContent = e.message;
+    }
+}
+
+// =========================
+// 4. Auto‑Runtime
+// =========================
+
+setInterval(sendVector, 1000);
+
+</script>
+</head>
+
+<body>
+
+<h1>IKI1UC · VECTOR Runtime</h1>
+<p>Dieser Tab hält den Vektor‑Zustand aktiv.</p>
+
+<h2>Output</h2>
+<pre id="out">Warte…</pre>
+
+</body>
+</html>
