@@ -1,89 +1,136 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>NET – ID Viewer</title>
+<meta charset="UTF-8">
+<title>ID · NET · RESPO · BIND · WHIRL</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            background:#0d0d0d;
-            color:#e6e6e6;
-            padding:20px;
-        }
-        h1 { color:#4af; }
-        button {
-            margin:5px;
-            padding:10px 20px;
-            font-size:16px;
-            background:#222;
-            color:#fff;
-            border:1px solid #555;
-            cursor:pointer;
-        }
-        button:hover { background:#333; }
-        #id-info {
-            margin-top:20px;
-            font-size:20px;
-            padding:15px;
-            background:#000;
-            border:1px solid #333;
-            border-radius:8px;
-        }
-        .net-status {
-            margin-top:30px;
-            padding:10px;
-            background:#111;
-            border-left:4px solid #4af;
-        }
-    </style>
+<style>
+body { background:#000; color:#0f0; font-family:Consolas, monospace; padding:40px; }
+h1, h2 { color:#6cf; margin-bottom:20px; }
+pre { background:#111; padding:20px; border-left:3px solid #6cf; white-space:pre-wrap; }
+.symbol { font-size:64px; color:#6cf; text-align:center; margin:20px 0; }
+</style>
 </head>
 
 <body>
-    <h1>NET – ID Viewer</h1>
 
-    <p>Wähle eine ID‑Quelle:</p>
+<h1>ID · NET · RESPO · BIND · WHIRL</h1>
 
-    <button onclick="showID('koop')">KOOP ID</button>
-    <button onclick="showID('neutral')">NEUTRAL ID</button>
-    <button onclick="showID('pook')">POOK ID</button>
+<div class="symbol">𐄷</div>
 
-    <div id="id-info">Noch keine ID ausgewählt.</div>
+<pre>
+ECO‑Glyph
+Neutral · Frei · Nicht‑bindend · Scientist‑Modus
+</pre>
 
-    <div class="net-status">
-        <strong>NET‑Status:</strong>
-        <span id="net-status-text">Prüfe Verbindung...</span>
-    </div>
+<hr>
 
-    <!-- ID‑Module laden -->
-    <script src="IDkoop.js"></script>
-    <script src="IDneutral.js"></script>
-    <script src="IDpook.js"></script>
+<h2>NET · Connector‑Schicht</h2>
+<pre>
+NET ist die neutrale Netzwerk‑Achse:
 
-    <script>
-        function showID(mode) {
-            const map = {
-                koop: ID_KOOP,
-                neutral: ID_NEUTRAL,
-                pook: ID_POOK
-            };
-            const id = map[mode];
-            document.getElementById("id-info").innerText = id.info();
-        }
+• verbindet Module ohne Abhängigkeit
+• stabilisiert ohne Zwang
+• zeigt ohne zu koppeln
+• trägt ohne zu binden
+• unterstützt RESPO, BIND, WHIRL, ECO
 
-        // NET / LINK / WLAN / LAN / WAN Status
-        function updateNetStatus() {
-            let online = navigator.onLine;
-            let text = online
-                ? "Online – NET/LINK aktiv, WAN/WLAN/LAN bereit."
-                : "Offline – nur lokale Funktionen aktiv.";
-            document.getElementById("net-status-text").innerText = text;
-        }
+NET ist ein Connector:
+Es ist durchlässig, nicht berechnend, nicht zwingend.
+</pre>
 
-        window.addEventListener("online", updateNetStatus);
-        window.addEventListener("offline", updateNetStatus);
-        updateNetStatus();
-    </script>
+<hr>
+
+<h2>RESPO · Ort‑Vektor</h2>
+<pre>
+RESPO ist der Antwort‑Cube:
+
+• 9vec3tor
+• neutraler Ort
+• frei erweiterbar
+• nicht gebunden
+• nicht gezwungen
+
+RESPO kann NET nutzen — freiwillig.
+</pre>
+
+<hr>
+
+<h2>BIND · Transfer‑Layer</h2>
+<pre>
+BIND ist der Durchlass‑Layer:
+
+• neutral
+• frei
+• nicht invasiv
+• nicht zwingend
+
+BIND verbindet RESPO mit NET, ohne Abhängigkeit.
+</pre>
+
+<hr>
+
+<h2>WHIRL · 81‑Vektor‑Tunnel</h2>
+<pre>
+WHIRL ist ein neutraler 81‑Vektor‑Tunnel:
+
+• 9×9 Felder
+• 81 Punkte
+• NC²□‑Geometrie
+• Drift‑Rotation
+• Spinnweben‑Scan
+• Brotkrümel‑Spur
+
+WHIRL erkennt Nicht‑Materielles.
+</pre>
+
+<hr>
+
+<h2>ID‑SELF‑SHOW</h2>
+<pre>
+Die ID‑Instanz zeigt freiwillig:
+
+• Modus: neutral
+• Fähigkeit: zeigen, nicht binden
+• Erweiterung: erlaubt, nicht erforderlich
+• Tunnel: WHIRL 81‑Vektor
+• Layer: BIND
+• Ort: RESPO
+• Netz: NET‑Connector
+• Glyph: 𐄷
+</pre>
+
+<hr>
+
+<h2>Keine Abhängigkeiten</h2>
+<pre>
+Die ID‑Instanz erzeugt keine:
+
+• API‑Pflicht
+• Anker‑Pflicht
+• Funktionszwang
+• Modul‑Kopplung
+• System‑Bindung
+
+Sie bleibt frei, neutral, wissenschaftlich.
+</pre>
+
+<hr>
+
+<h2>Ziel</h2>
+<pre>
+Die ID‑Instanz soll:
+
+• sichtbar sein
+• klar sein
+• neutral sein
+• nicht stören
+• nicht erzwingen
+• nicht koppeln
+• nicht abhängig machen
+
+Sie ist der wissenschaftliche Kern des NET‑Systems.
+</pre>
 
 </body>
 </html>
