@@ -13,20 +13,20 @@ pre { background:#111; padding:12px; border:1px solid #333; border-radius:6px; }
 <script type="module">
 
 // =========================
-// 0. Connector‑NET
+// 0. Connector‑NET (Browser‑kompatibel)
 // =========================
-export const CONNECTOR_NET = {
+
+const CONNECTOR_NET = {
     mode: "neutral",
-    pass: (vector) => ({
-        received: vector,
-        time: Date.now(),
-        state: "passed-through"
-    })
+    pass(vector) {
+        return {
+            received: vector,
+            time: Date.now(),
+            state: "passed-through"
+        };
+    }
 };
 
-
-
-    
 // =========================
 // 1. Vektor definieren
 // =========================
@@ -41,7 +41,8 @@ const ANKER = {
         qi: QI,
         iqq: IQQ,
         state: [QI[0], IQQ[1], INIT[2]]
-    } 
+    }
+};
 
 // =========================
 // 2. TEAM VECTOR
@@ -54,24 +55,17 @@ const TEAM_VECTOR = {
 };
 
 // =========================
-// 3. NC.link FullSync
+// 3. CONNECTOR‑NET statt NC.link
 // =========================
 
-async function sendVector() {
-    try {
-        const mod = await import("./NCLinkFullSync.js");
-        const out = mod.LINK.fullSync({
-            vector: ANKER.vector,
-            team: TEAM_VECTOR,
-            time: Date.now()
-        });
+function sendVector() {
+    const out = CONNECTOR_NET.pass({
+        vector: ANKER.vector,
+        team: TEAM_VECTOR
+    });
 
-        document.getElementById("out").textContent =
-            JSON.stringify(out, null, 2);
-
-    } catch(e) {
-        document.getElementById("out").textContent = e.message;
-    }
+    document.getElementById("out").textContent =
+        JSON.stringify(out, null, 2);
 }
 
 // =========================
