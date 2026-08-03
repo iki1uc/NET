@@ -1,11 +1,38 @@
-# 🌐 NET · RESPO · CONNECTOR · WHIRL · BIND
-Vorläufige Dokumentation — funktional, neutral, online-tauglich  
+# 🌐 NET · RESPO · CONNECTOR · VECTOR · WHIRL
+Vorläufige Dokumentation — mit atomarer Freiheits‑Logik  
 Optimierung folgt später, aber diese Version ist vollständig nutzbar.
 
 ---
 
-## 🔹 Zweck des NET-Systems
-NET ist die **neutrale Netzwerk-Achse** des Systems.
+## 🔹 Atomare Freiheits‑Logik (AF‑Logik)
+AF‑Logik ist der Grundsatz des Systems:
+
+**Ein Modul darf alles zeigen, aber nichts erzwingen.  
+Ein Modul darf alles verbinden, aber nichts binden.  
+Ein Modul darf alles weitergeben, aber nichts verändern.**
+
+AF‑Logik ist:
+
+- neutral  
+- frei  
+- nicht zwingend  
+- nicht kontrollierend  
+- nicht abhängig  
+- nicht hierarchisch  
+
+AF‑Logik ist die Grundlage von:
+
+- NET  
+- RESPO  
+- CONNECTOR_NET  
+- VECTOR Runtime  
+- WHIRL  
+- ID‑SELF‑SHOW  
+
+---
+
+## 🔹 NET · Connector‑Achse
+NET ist die **neutrale Netzwerk‑Achse** des Systems.
 
 Es verbindet Module ohne Abhängigkeit:
 
@@ -15,12 +42,14 @@ Es verbindet Module ohne Abhängigkeit:
 - ermöglicht Durchlass  
 - unterstützt RESPO, BIND, WHIRL, ID  
 
-NET ist ein **Connector**, kein Controller.
+NET folgt der AF‑Logik:
+
+**NET verbindet, aber NET zwingt nicht.**
 
 ---
 
-## 🔹 RESPO · Antwort-Vektor
-RESPO ist der **Ort-Vektor** des Systems:
+## 🔹 RESPO · Antwort‑Vektor
+RESPO ist der **Ort‑Vektor**:
 
 - 9vec3tor  
 - neutraler Ort  
@@ -28,38 +57,61 @@ RESPO ist der **Ort-Vektor** des Systems:
 - nicht zwingend  
 - nicht bindend  
 
-RESPO kann NET nutzen — **freiwillig**.
+RESPO folgt der AF‑Logik:
+
+**RESPO zeigt, aber RESPO kontrolliert nicht.**
 
 ---
 
-## 🔹 BIND · Transfer-Layer
-BIND ist der **Durchlass-Layer**:
+## 🔹 CONNECTOR_NET · Durchlass‑Layer
+CONNECTOR_NET ist der **neutrale Vektor‑Durchlass**:
 
-- neutral  
-- frei  
-- nicht invasiv  
-- nicht zwingend  
+- nimmt Vektoren entgegen  
+- verändert sie nicht  
+- bindet sie nicht  
+- koppelt sie nicht  
+- gibt sie neutral weiter  
 
-BIND verbindet Module ohne Abhängigkeit.
+CONNECTOR_NET folgt der AF‑Logik:
+
+**Durchlassen statt festhalten.  
+Weiterreichen statt verändern.**
 
 ---
 
-## 🔹 WHIRL · 81-Vektor-Tunnel
-WHIRL ist der **innerer Scan-Tunnel**:
+## 🔹 VECTOR Runtime · Zustandshalter
+VECTOR Runtime hält:
+
+- INIT  
+- QI  
+- IQQ  
+- ANKER‑State  
+- TEAM_VECTOR  
+
+VECTOR folgt der AF‑Logik:
+
+**VECTOR zeigt seinen Zustand, aber erzwingt keinen Zustand.**
+
+---
+
+## 🔹 WHIRL · 81‑Vektor‑Tunnel
+WHIRL ist der **innerer Scan‑Tunnel**:
 
 - 9×9 Felder  
 - 81 Punkte  
-- NC²□ Drift-Geometrie  
-- Spinnweben-Struktur  
-- Brotkrümel-Spur  
-- Erkennung von Nicht-Materiellem  
+- NC²□ Drift‑Geometrie  
+- Spinnweben‑Struktur  
+- Brotkrümel‑Spur  
+- Erkennung von Nicht‑Materiellem  
 
-WHIRL ist ein **neutraler Tunnel**, vergleichbar mit einem Thunderbolt-Durchlass — aber systemisch.
+WHIRL folgt der AF‑Logik:
+
+**WHIRL scannt, aber WHIRL misst nicht.**
 
 ---
 
 ## 🔹 ID · Neutraler Kern
-Die ID-Instanz zeigt:
+Die ID‑Instanz zeigt:
 
 - Modus: neutral  
 - Fähigkeit: zeigen, nicht binden  
@@ -70,18 +122,20 @@ Die ID-Instanz zeigt:
 - Netz: NET  
 - Glyph: 𐄷  
 
-ID ist **Informations-Kern**, nicht Kontroll-Kern.
+ID folgt der AF‑Logik:
+
+**ID identifiziert, aber ID definiert nicht.**
 
 ---
 
 ## 🔹 Dateien im Repository
-- `index.html` — NET-Frontend  
-- `id.html` — ID-Anzeige  
-- `vector.html` — WHIRL / 81-Vektor  
+- `index.html` — NET‑Frontend  
+- `id.html` — ID‑Anzeige  
+- `vector.html` — WHIRL / 81‑Vektor  
 - `README.md` — Dokumentation  
-- `IDkoop.js` — KOOP-ID  
-- `IDneutral.js` — NEUTRAL-ID  
-- `IDpook.js` — POOK-ID  
+- `IDkoop.js` — KOOP‑ID  
+- `IDneutral.js` — NEUTRAL‑ID  
+- `IDpook.js` — POOK‑ID  
 
 ---
 
