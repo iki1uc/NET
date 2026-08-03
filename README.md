@@ -1,90 +1,91 @@
-# 🌐 NET – Netzwerk‑Achse & Systemlink
-
-NET ist die Netzwerk‑Stabilisierungsachse des gesamten Systems.  
-Es verbindet alle Module über **LAN**, **WLAN**, **WAN**, **NET** und **LINK**  
-und stellt sicher, dass AXO‑Module, ID‑Module und Frontend‑Dateien online funktionieren.
-
-NET ist ein **ANKER‑Modul**:  
-Es ist **stabilisierend**, **verteilend**, **verlinkend**, aber **nicht berechnend**.
+# 🌐 NET · RESPO · CONNECTOR · WHIRL · BIND
+Vorläufige Dokumentation — funktional, neutral, online-tauglich  
+Optimierung folgt später, aber diese Version ist vollständig nutzbar.
 
 ---
 
-## 🎯 Zweck
+## 🔹 Zweck des NET-Systems
+NET ist die **neutrale Netzwerk-Achse** des Systems.
 
-- Bereitstellung einer stabilen Netzwerk‑Schicht  
-- Verbindung aller Module über NET/LINK  
-- Online‑Bereitschaft für index.html und id.html  
-- Unterstützung für AXO‑ID‑Module  
-- Bereitstellung einer gemeinsamen NET‑Status‑Anzeige  
-- Grundlage für GitHub Pages / Browser‑Zugriff
+Es verbindet Module ohne Abhängigkeit:
 
-NET ist die **Netzwerk‑Achse**, die alle Repositories verbindet.
+- zeigt Verbindungen  
+- stabilisiert ohne Zwang  
+- trägt ohne Bindung  
+- ermöglicht Durchlass  
+- unterstützt RESPO, BIND, WHIRL, ID  
 
----
-
-## 📦 Struktur
-
-Das Repository enthält:
-
-- **README.md** – Dokumentation  
-- **index.html** – NET‑Frontend (Online‑Status, ID‑Auswahl)  
-- **id.html** – Anzeige einzelner ID‑Informationen  
-- **IDkoop.js** – KOOP‑ID Modul  
-- **IDneutral.js** – NEUTRAL‑ID Modul  
-- **IDpook.js** – POOK‑ID Modul  
+NET ist ein **Connector**, kein Controller.
 
 ---
 
-## 🌐 index.html
+## 🔹 RESPO · Antwort-Vektor
+RESPO ist der **Ort-Vektor** des Systems:
 
-Die Datei `index.html` zeigt:
+- 9vec3tor  
+- neutraler Ort  
+- frei erweiterbar  
+- nicht zwingend  
+- nicht bindend  
 
-- NET‑Status (Online/Offline)  
-- ID‑Auswahl (KOOP / NEUTRAL / POOK)  
-- Live‑Anzeige der ID‑Informationen  
-
-Sie ist vollständig kompatibel mit:
-
-- LAN  
-- WLAN  
-- WAN  
-- GitHub Pages  
-- Browsern (Chrome, Firefox, Edge, Safari)
+RESPO kann NET nutzen — **freiwillig**.
 
 ---
 
-## 🧩 id.html
+## 🔹 BIND · Transfer-Layer
+BIND ist der **Durchlass-Layer**:
 
-Zeigt die vollständige ID‑Information im Browser.
+- neutral  
+- frei  
+- nicht invasiv  
+- nicht zwingend  
 
----
-
-## 🔧 ID‑Module
-
-### IDkoop.js
-
-KOOP‑ID: Kooperation, Verbindung, Stabilität
-
-
-### IDneutral.js
-
-NEUTRAL‑ID: Ausgleich, Mitte, Balance
-
-
-### IDpook.js
-
-POOK‑ID: Pool‑Quelle, Datenanker, Stabilisationsachse
-
+BIND verbindet Module ohne Abhängigkeit.
 
 ---
 
-## 🚀 Installation
+## 🔹 WHIRL · 81-Vektor-Tunnel
+WHIRL ist der **innerer Scan-Tunnel**:
 
+- 9×9 Felder  
+- 81 Punkte  
+- NC²□ Drift-Geometrie  
+- Spinnweben-Struktur  
+- Brotkrümel-Spur  
+- Erkennung von Nicht-Materiellem  
+
+WHIRL ist ein **neutraler Tunnel**, vergleichbar mit einem Thunderbolt-Durchlass — aber systemisch.
+
+---
+
+## 🔹 ID · Neutraler Kern
+Die ID-Instanz zeigt:
+
+- Modus: neutral  
+- Fähigkeit: zeigen, nicht binden  
+- Erweiterung: erlaubt, nicht erforderlich  
+- Tunnel: WHIRL  
+- Layer: BIND  
+- Ort: RESPO  
+- Netz: NET  
+- Glyph: 𐄷  
+
+ID ist **Informations-Kern**, nicht Kontroll-Kern.
+
+---
+
+## 🔹 Dateien im Repository
+- `index.html` — NET-Frontend  
+- `id.html` — ID-Anzeige  
+- `vector.html` — WHIRL / 81-Vektor  
+- `README.md` — Dokumentation  
+- `IDkoop.js` — KOOP-ID  
+- `IDneutral.js` — NEUTRAL-ID  
+- `IDpook.js` — POOK-ID  
+
+---
+
+## 🔹 Installation
 ```bash
 git clone https://github.com/iki1uc/NET.git
 cd NET
-
-
-📄 Lizenz
-Dieses Projekt ist frei nutzbar.
-
