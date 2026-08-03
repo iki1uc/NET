@@ -13,6 +13,21 @@ pre { background:#111; padding:12px; border:1px solid #333; border-radius:6px; }
 <script type="module">
 
 // =========================
+// 0. Connector‑NET
+// =========================
+export const CONNECTOR_NET = {
+    mode: "neutral",
+    pass: (vector) => ({
+        received: vector,
+        time: Date.now(),
+        state: "passed-through"
+    })
+};
+
+
+
+    
+// =========================
 // 1. Vektor definieren
 // =========================
 
