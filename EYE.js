@@ -5,3 +5,5 @@ NET.modules.push(EYE);
 NET.eye = function(respo) {
   return EYE.view(respo);
 };
+NET.modules.push(EYE)
+NET.eye = respo => EYE.view(respo)
